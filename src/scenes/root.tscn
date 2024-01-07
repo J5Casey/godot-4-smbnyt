@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://8vovgt5q2v4t"]
+
+[ext_resource type="Script" path="res://src/scenes/Board.gd" id="1_dwucf"]
+[ext_resource type="Script" path="res://src/scenes/Tile.gd" id="2_71uj4"]
+
+[node name="root" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Board" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dwucf")
+
+[node name="Tile" type="Panel" parent="Board"]
+layout_mode = 2
+script = ExtResource("2_71uj4")
