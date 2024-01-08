@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://8vovgt5q2v4t"]
+[gd_scene load_steps=7 format=3 uid="uid://8vovgt5q2v4t"]
 
 [ext_resource type="Script" path="res://src/scenes/Board.gd" id="1_dwucf"]
-[ext_resource type="Script" path="res://src/scenes/Tile.gd" id="2_71uj4"]
+[ext_resource type="Script" path="res://src/scenes/root.gd" id="1_i4k4f"]
+[ext_resource type="Texture2D" uid="uid://dwbsdu0yy1gaw" path="res://assets/Backgrounds/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="3_w6gkq"]
+[ext_resource type="Texture2D" uid="uid://dr0tc3x1ewnpt" path="res://assets/Backgrounds/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png" id="4_ww76f"]
+[ext_resource type="Texture2D" uid="uid://b3k1c30yflvbr" path="res://assets/Backgrounds/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="5_ec3jn"]
+[ext_resource type="Texture2D" uid="uid://xgbm7r8js6w" path="res://assets/Backgrounds/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="6_elvq1"]
 
 [node name="root" type="Control"]
 layout_mode = 3
@@ -10,13 +14,30 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_i4k4f")
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(963, 542)
+scale = Vector2(3.33333, 3.34568)
+texture = ExtResource("3_w6gkq")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(966.5, 543.5)
+scale = Vector2(3.34549, 3.35494)
+texture = ExtResource("4_ww76f")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(963, 541)
+scale = Vector2(3.33333, 3.33951)
+texture = ExtResource("5_ec3jn")
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(963.5, 541)
+scale = Vector2(3.33507, 3.33951)
+texture = ExtResource("6_elvq1")
 
 [node name="Board" type="GridContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_dwucf")
-
-[node name="Tile" type="Panel" parent="Board"]
-layout_mode = 2
-script = ExtResource("2_71uj4")
