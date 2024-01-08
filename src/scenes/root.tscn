@@ -57,30 +57,32 @@ texture = ExtResource("6_elvq1")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Background"]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 128.0
-offset_right = 382.0
-offset_bottom = 944.0
+offset_left = 368.0
+offset_top = 144.0
+offset_right = 462.0
+offset_bottom = 960.0
 theme_override_colors/default_color = Color(0, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_ug6ii")
 theme_override_font_sizes/normal_font_size = 100
 text = "SUBLIME"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Background"]
-offset_left = 1448.0
-offset_top = 192.0
-offset_right = 1542.0
-offset_bottom = 969.0
+layout_mode = 0
+offset_left = 1400.0
+offset_top = 176.0
+offset_right = 1494.0
+offset_bottom = 953.0
 theme_override_colors/default_color = Color(0, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_ug6ii")
 theme_override_font_sizes/normal_font_size = 100
 text = "MATRIX"
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Background"]
-offset_left = 536.0
-offset_top = 992.0
-offset_right = 1296.0
-offset_bottom = 1088.0
+layout_mode = 0
+offset_left = 544.0
+offset_top = 968.0
+offset_right = 1304.0
+offset_bottom = 1064.0
 theme_override_colors/default_color = Color(0.396078, 0, 0.843137, 1)
 theme_override_fonts/normal_font = ExtResource("5_ug6ii")
 theme_override_font_sizes/normal_font_size = 70
@@ -88,8 +90,8 @@ text = "BLACK NYTE EDITION"
 
 [node name="Board" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 448.0
-offset_top = 64.0
-offset_right = 488.0
-offset_bottom = 100.0
+offset_left = 520.0
+offset_top = 136.0
+offset_right = 560.0
+offset_bottom = 172.0
 script = ExtResource("1_dwucf")
